@@ -17,17 +17,18 @@
             $this->assertEquals(-90, $result);
         }
 
-        // function test_angle_minute()
-        // {
-        //     //Arrange
-        //     $test_angle = new Clock;
-        //     $input = '35';
-        //
-        //     //Act
-        //     $result = test_angle->angle($input);
-        //
-        //     //Assert
-        //     $this->assertEquals('210');
-        // }
+        function test_angle_invalidhr()
+        {
+            //Arrange
+            $test_angle = new Clock;
+            $input = 13;
+            $input2 = 40;
+
+            //Act
+            $result = $test_angle->angle($input, $input2);
+
+            //Assert
+            $this->assertEquals('invalid entry', $result);
+        }
     }
  ?>
