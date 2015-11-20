@@ -1,15 +1,23 @@
-SPEC 1:
-Input:
-Output:
+SPEC 1: For each single integer increase from 0, the hour hand increases by an angle of 30
+Input:  4
+Output:  120
 
-SPEC 2:
-Input:
-Output:
+SPEC 2:  For each single integer increase from 0, the minute hand increases by 6
+Input:  35
+Output:  210
 
-SPEC 3:
-Input:
-Output:
+SPEC 3:  The hour value cannot exceed 12
+Input:  13
+Output:  'invalid entry'
 
-SPEC 4:
-Input:
-Output:
+SPEC 4:  The minute value cannot exceed 59
+Input:  65
+Output:  'invalid entry'
+
+SPEC 5:  The output will display the difference between the angle of the minute and hour hand
+Input:  9, 10
+Output:  150
+
+SPEC 6:  The output will display the smaller of the 2 angles created by the location of the hour and minute hands
+Input:  9, 10
+Output:  (210) 150

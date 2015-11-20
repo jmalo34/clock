@@ -1,3 +1,5 @@
+//how can i limit the numbers available in the menu and/or alter it to specific options?
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +10,14 @@
     <div class = 'container'>
         <h1>Clock Angle</h1>
             <h2>describe ...</h2>
-            <div class='form-group'>
-                <label for='time'>Time:</label>
-                <input id='time' name='time' class='form-control' type='text'>
-                <button type='submit' class='btn-success'>let the clock tell it</button>
-            </div>
+            <form action=/clock role='form'>
+                <div class='form-group'>
+                    <label for='time'>Time:</label>
+                    <input id='hour' name='hour' class='form-control' type='number' placeholder='hour'>
+                    <input id='minute' name='minute' class='form-control' type='number' placeholder='minute'>
+                    <button type='submit' class='btn-success'>let the clock tell it</button>
+                </div>
+            </form>
     </div>
 </body>
 </html>
