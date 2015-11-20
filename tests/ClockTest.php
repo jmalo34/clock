@@ -14,7 +14,7 @@
             $result = $test_angle->angle($input, $input2);
 
             //Assert
-            $this->assertEquals(-90, $result);
+            $this->assertEquals(90, $result);
         }
 
         function test_angle_invalidhr()
@@ -43,6 +43,19 @@
 
             //Assert
             $this->assertEquals('invalid entry', $result);
+        }
+
+        function test_angle_smallerdiff()
+        {
+            //Arrange
+            $test_angle = new Clock;
+            $input = 9;
+            $input2 = 10;
+
+            $result = $test_angle->angle($input, $input2);
+
+            //Assert
+            $this->assertEquals(150, $result);
         }
     }
  ?>
