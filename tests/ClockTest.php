@@ -30,5 +30,19 @@
             //Assert
             $this->assertEquals('invalid entry', $result);
         }
+
+        function test_angle_invalidmin()
+        {
+            //Arrange
+            $test_angle = new Clock;
+            $input = 11;
+            $input2 = 65;
+
+            //Act
+            $result = $test_angle->angle($input, $input2);
+
+            //Assert
+            $this->assertEquals('invalid entry', $result);
+        }
     }
  ?>
