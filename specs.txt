@@ -1,0 +1,15 @@
+SPEC 1:
+Input:
+Output:
+
+SPEC 2:
+Input:
+Output:
+
+SPEC 3:
+Input:
+Output:
+
+SPEC 4:
+Input:
+Output:
